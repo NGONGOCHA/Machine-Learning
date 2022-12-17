@@ -63,7 +63,7 @@ def logistic_regression_cv(X_train, y_train):
     logistic_classifier.fit(X_train, y_train)
     return logistic_classifier
 
-#Hàm đánh giá mô hình
+
 def evaluate_model(y_test, y_pred):
   print("accuracy score: ", accuracy_score(y_test, y_pred))
   print("Balandced accuracy score: ", balandced_accuracy_score(y_test, y_pred))
@@ -75,7 +75,6 @@ def confusion_matrix(y_test, y_pred, model, plt=None):
   ax1.xaxis.tick_top()
   plt.show
 
-# Hàm chia train test
 
 def traintest(X_train, X_test, y_train, y_test):
       X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=15)
